@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot password</title>
+    <link rel="stylesheet" href="forgot.css" />
+</head>
+<body>
+    <div id="emailSent">
+        <i class="fa-solid fa-check"></i>
+        <h3>Sucessfully Email sent</h3>   
+    </div>
+   <div class="forgotCenter">   
+       <form class="forgotPassword" id="forgotPassword">
+          <h3>Forgot Password</h3>
+          <input type="email" id="inputEmail" name="email" placeholder="Email" required>
+          <div id="emailMsg"></div>
+          <button type="submit" id="ResetBtn" onsubmit="">Reset</button>
+          <div class="account">
+            <p>Already have an account?</p>
+            <a href="#" id="loginPage" onclick="openLogin()">Login</a>
+          </div>
+       </form>
+   </div>
+
+
+   <script src="https://kit.fontawesome.com/a032cacd37.js" crossorigin="anonymous"></script>
+    <script src="forgot.js"></script>
+</body>
+</html>

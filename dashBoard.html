@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="dashBoard.css" />
+</head>
+<body>
+    <nav class="nav-Bar">
+        <h2 style="margin-left: 20px;">LOGO</h2>
+        <div class="nav-secPart">
+                <h2 style="font-weight: 600; font-size: medium; border-bottom: 2px solid black;margin-left: 20px;">Home</h2>
+                <div class="effect">
+                    <button class="userBtn">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                        <h2 class="space">Mr. Kalyan</h2>
+                        <i class="fa-solid fa-caret-down fa-xl"></i>
+                    </button>
+                    <div class="dropDown" id="dropDown">
+                        <a href="#" onclick="Profile()">Profile</a>
+                        <a href="#" onclick="ChangePassword()">Change Password</a>
+                        <a href="#" onclick="logOut()">Log Out</a>
+                    </div>
+                </div>
+        </div>
+        
+    </nav>
+
+
+
+    <div class="details">
+      <div id="search-User">
+          <input type="search" id="search-AddUser" placeholder="Search User">
+      </div>
+      <div id="Add-User">
+          <button type="button" onclick="showForm()">Add User</button>
+      </div>
+   </div>
+    <div class="form"> 
+      <div class="form-aline" id="form-aline">
+             <div id="form-content">
+                 <h4>Add User</h4>
+                 <button id="closeForm" onclick="hideForm()">
+                 <i class="fa-solid fa-circle-xmark fa-2xl"></i>
+                 </button>
+             </div>
+             <!-- <div class="form-Details"> -->
+                 <form id="myForm">
+                      <input type="text" id="FirstName" placeholder=" Enter First Name">
+                      <div id="firstError"></div>
+                      <input type="text" id="LastName" placeholder="Enter Last Name">
+                      <div id="lastError"></div>
+                      <input type="email" id="emailInput" placeholder="Email Email">
+                      <div id="emailError"></div>
+                      <input type="text" id="mobileNumber" placeholder="Email Mobile Number">
+                      <div id="numberError"></div>
+                      <div id="image-preview-container">
+                        <img id="image-preview" alt="Image Preview" />
+                      </div>
+                      <input type="file" id="imageInput" accept="image/*" onchange="ImageUrl(event)">
+                      <div id="imageError"></div>
+                      <button type="submit" id="Add-UserBtn" onclick="valid(event)">Add User</button>
+                 </form>
+             <!-- </div> -->
+      </div>
+    </div>
+
+    <div class="deletePopUp" id="deletePopUp">
+        <div class="deletePopUpdata">
+          <h3>Are you sure want to delete?</h3>
+          <div>
+            <button class="deleteyes" onclick="deleteyes(event)">
+              <i class="fa-solid fa-thumbs-up"></i>Yes
+            </button>
+            <button class="deleteno" onclick="deleteno(event)">
+              <i class="fa-solid fa-thumbs-down"></i>No
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="emptyDataPopUp" id="emptyDataPopUp">
+        <p>No data Found!</p>
+      </div>
+    <script src="https://kit.fontawesome.com/a032cacd37.js" crossorigin="anonymous"></script>
+    <script src="dashBoard.js"></script>
+</body>
+</html>

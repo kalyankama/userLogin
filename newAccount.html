@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new account</title>
+    <link rel="stylesheet" href="newAccount.css" />
+</head>
+<body>
+    <div class="newAcc" id="newAcc">
+         <div class="totalForm">
+              <h3>Create your account</h3>
+              <form id="myForm">
+                 <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" required>
+                 <div id="firstFormError"></div>
+                 <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" required>
+                 <div id="lastNameError"></div>
+                 <input type="email" name="email" id="emialDetails" placeholder="Enter Email" required>
+                 <div id="emailError"></div>
+                 <input type="password" name="password" id="passDetails" placeholder="Enter Password" required>
+                 <div id="passDetails"></div>
+                 <button type="submit">submit</button>
+              </form>
+              <div class="loginBtn">
+                 <small>Already have an account?</small>
+                 <a href="#" onclick="openLoginPage()">Login</a>
+              </div>
+         </div>
+    </div>
+    <script src="newAccount.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Change Password</h2>
+    <form id="changePasswordForm">
+        <label for="oldPassword">Old Password:</label>
+        <input type="password" id="oldPassword" required>
+        <br>
+
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" required>
+        <span class="error" id="newPassError"></span>
+        <br>
+
+        <label for="confirmNewPassword">Confirm New Password:</label>
+        <input type="password" id="confirmNewPassword" required>
+        <span class="error" id="confirmPassError"></span>
+        <br>
+
+        <button type="button" onclick="changePassword()">Change Password</button>
+    </form>
+
+    <script>
+        function changePassword() {
+            // Get input values
+            var oldPassword = document.getElementById("oldPassword").value;
+            var newPassword = document.getElementById("newPassword").value;
+            var confirmNewPassword = document.getElementById("confirmNewPassword").value;
+
+            // Reset error messages
+            document.getElementById("newPassError").innerHTML = "";
+            document.getElementById("confirmPassError").innerHTML = "";
+
+            // Validate new password
+            if (!newPassword.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/)) {
+                document.getElementById("newPassError").innerHTML = "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.";
+                return;
+            }
+
+            // Check if new password and confirm password match
+            if (newPassword !== confirmNewPassword) {
+                document.getElementById("confirmPassError").innerHTML = "Passwords do not match.";
+                return;
+            }
+
+            // Your logic to change the password can go here
+            // For this example, we'll just log a success message
+            console.log("Password successfully changed!");
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+

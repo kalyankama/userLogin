@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page1" id="page1">
+        <div class="loginForm" id="loginForm">
+            <h2 class="logo">Logo</h2>
+            <h2 class="welcome">welcome back!</h2>
+            <button class="btn" style="display: flex;align-items: center;justify-content: center;margin-left: 15%;height: 20px;">
+                <i class="fa-brands fa-google" style="margin-right: 10px;"></i>  <a href="google.com" style="color: black;font-size: medium;text-decoration: none;"><p>Login with google</p></a>
+            </button>
+            <div class="Line">
+                <h5 class="middle-line">Or Login with<br>Email </h5>
+            </div>
+            <div class="formFirstPage">
+                <form class="firstForm" id="firstForm">
+                    <input type="email" name="email" id="emailInput" placeholder="Email">
+                    <div id="emailError"></div>
+                    <input type="password" name="password" id="passwordInput" placeholder="Password" autocomplete="current-password">
+                    <div id="passwordError"></div>
+                    <div class="keepMeLogin">
+                        <input class="checkbox" type="checkbox" name="checkbox">
+                        <p> Keep me logged in</p>
+                        <a href="#" id="forgot">Forgot Password</a>
+                    </div>
+                    <button type="submit" style="background-color: rgb(41, 29, 111);color: #ffff;" onsubmit="loginMeIn()">Log in</button>
+                </form>
+                <div class="sign-up">
+                    <p>Don't have an account?</p>
+                    <a href="#" id="newAcc">Sign Up</a>
+                </div>
+            </div>    
+        </div>
+               <div class="loginImg">
+                 <img src="images/login1.webp" alt="img">
+               </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a032cacd37.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- #cbe3ff im writing here the color code where when a person clicks on any input box the box background-colorhas to change #cbe3ff  -->

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="profile.css" />
+    <!-- Add this script tag to include toastr library -->
+<!-- toastr library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+<!-- Your custom scripts -->
+<script src="profile.js" defer></script>
+
+
+</head>
+<body>
+    <nav class="nav-Bar">
+        <h2 style="margin-left: 20px;">LOGO</h2>
+        <div class="nav-secPart">
+                <h2 style="font-weight: 600; font-size: medium; border-bottom: 2px solid black;margin-left: 20px;">Home</h2>
+                <div class="effect">
+                    <button class="userBtn">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                        <h2 class="space">Mr. Kalyan</h2>
+                        <i class="fa-solid fa-caret-down fa-xl"></i>
+                    </button>
+                    <div class="dropDown" id="dropDown">
+                        <a href="#" onclick="openProfile()">Profile</a>
+                        <a href="#" onclick="openChangePassword()">Change Password</a>
+                        <a href="#" onclick="logOut()">Log Out</a>
+                    </div>
+                </div>
+        </div>
+    </nav>
+
+
+    <div class="profile-details">
+        <div class="profileForm" id="profileForm">
+            <input type="text" name="FirstName" placeholder="Enter First Name" id="profileFirst">
+            <p id="firstNameErr"></p>
+            <input type="text" name="lastName" placeholder="Enter Last Name" id="profileLast" autocomplete="current-password">
+            <p id="lastNameErr"></p>
+            <input type="email" name="email" placeholder="Enter Your Email" id="profileEmail" >
+            <p id="emailErr"></p>
+            <button id="profileBtn" onsubmit="updateProfile()">Update</button>
+        </div>
+   </div>
+    <script src="https://kit.fontawesome.com/a032cacd37.js" crossorigin="anonymous"></script>
+    <!-- <script src="profile.js"></script> -->
+</body>
+</html>

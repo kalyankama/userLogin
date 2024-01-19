@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="changePass.css" />
+</head>
+<body>
+    <nav class="nav-Bar">
+        <h2 style="margin-left: 20px;">LOGO</h2>
+        <div class="nav-secPart">
+                <h2 style="font-weight: 600; font-size: medium; border-bottom: 2px solid black;margin-left: 20px;">Home</h2>
+                <div class="effect">
+                    <button class="userBtn">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                        <h2 class="space">Mr. Kalyan</h2>
+                        <i class="fa-solid fa-caret-down fa-xl"></i>
+                    </button>
+                    <div class="dropDown" id="dropDown">
+                        <a href="#" onclick="openProfile()">Profile</a>
+                        <a href="#" onclick="openChangePassword()">Change Password</a>
+                        <a href="#" onclick="logOut()">Log Out</a>
+                    </div>
+                </div>
+        </div>
+    </nav>
+
+
+    <div class="change-details">
+        <div class="changePassForm" id="changePassForm">
+            <h3 style="margin-bottom: 20px;">Change Password</h3>
+            <input type="password" placeholder="Current Password" id="oldPassword">
+            <p id="oldPassErr"></p>
+            <input type="password" placeholder="New Password" id="newPassword">
+            <p id="newpassError"></p>
+            <input type="password" placeholder="Confirm New Password" id="confirmNewPass">
+            <p id="confirmError"></p>
+            <button id="changePassBtn">Update</button>
+        </div>
+   </div>
+    <script src="https://kit.fontawesome.com/a032cacd37.js" crossorigin="anonymous"></script>
+    <script src="changePass.js"></script>
+</body>
+</html>

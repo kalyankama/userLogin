@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background-color: rgb(159, 175, 222);
+}
+.nav-Bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    flex-wrap: wrap;
+    align-items: center;
+    /* width: 25%; */
+    height: 60px;
+}
+
+
+.nav-secPart{
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    width: 250px;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+.userBtn{
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    border: none;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 150px;
+    
+}
+.space{
+    font-weight: lighter;
+}
+.dropDown{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: aliceblue;
+    height: 150px;
+    justify-content: space-around;
+    color: black;
+    width: 2000px;
+    box-shadow: 6px 6px 6px 3px rgba(65, 60, 65, 0.3);
+    display: none;
+}
+.dropDown a{
+    padding-left: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.effect:hover .dropDown{
+    display: block;
+}
+.dropDown a:hover {
+    background-color: #ddd;
+    color: rgb(56, 56, 150);
+  }
+  .change-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 89vh;
+}
+.change-details .changePassForm{
+    /* border: 2px solid orange; */
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 7px 12px 6px rgba(65, 65, 70, 0.4);
+    border-radius: 16px;
+    border: none;
+}
+/* #requirements{
+     margin: -22px 0px 5px 0px;
+    width: 80%;
+}
+#requirements .message{
+    color: red;
+    font-size: small;
+} */
+.change-details .changePassForm input{
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+}
+.change-details .changePassForm button{
+    padding: 10px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(41, 29, 111);
+    color: #fff;
+}

@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background: linear-gradient(to right, rgb(41, 29, 111) 50%, rgb(159, 175, 222) 50%);
+
+}
+.forgotCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    height: 100vh; 
+} 
+
+.forgotPassword{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 250px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgb(159, 175, 222);
+    border-radius: 16px;
+    box-shadow: 15px 5px 15px 0px rgba(49, 48, 48, 0.5);
+}
+.forgotPassword h3{
+    /* margin-top: -60px; */
+    font-size: medium;
+    font-weight: bolder;
+}
+.forgotPassword input{
+    margin-top: 8%;
+    padding: 15px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 3px 3px 6px 0.5px rgba(49, 48, 48, 0.5);
+    margin-bottom: 40px;
+}
+.forgotPassword button{
+    padding: 8px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(41, 29, 111);
+    color: #ffff;
+}
+.account{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#emailSent{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+    padding: 15px;
+    margin-left: 950px;
+    color: #ffff;
+    /* border: 2px solid red; */
+    background-color: rgb(57, 113, 57);
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none;
+}
+#emailSent h3{
+    margin-left: 5px;
+    margin-right: 50px;
+    font-weight: lighter;
+    font-size: larger;
+}
+/* #emailMsg{ */
+    /* height: 50px; */
+    /* border: 2px solid green; */
+    /* margin-left: 10px;
+    margin-top: -37px;
+    margin-bottom: 15px;
+    color: red;
+    margin-right: 260px;
+    display: none;
+} */
+/* #emailMsg p{
+    color: red;
+    margin-top: -35px ;
+    border: 2px solid black;
+} */
+@media screen and (max-width: 786px) {
+    .forgotPassword{
+        width: 70%;
+    }
+}
